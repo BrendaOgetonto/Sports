@@ -1,0 +1,27 @@
+
+            <div class="modal fade" id="disable_player" tabindex="-1" role="dialog" aria-labelledby="Disable" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body ">
+                            <button class="btn btn-danger" style="width: 100%!important;"><span class="pull-left"><span class="fa fa-warning"></span> Are you sure you want to disable this player?</span></button>
+                            <form role="form" method="post"  id="player_disable" action="<?php echo base_url(); ?>mc/disablePlayer">
+
+                                <div class="form-group col-md-12 col-lg-12" hidden="true">
+                                    <label for="playerAutoId" class="control-label">Player Auto Id</label>
+                                    <input type="text" name="playerAutoId" placeholder="Player Auto Id" class=" form-control" id="playerAutoId" required="required" readonly="true" >
+                                </div>
+                                <br><br>
+                                <div class="form-group col-md-12 col-lg-12 " >
+                                    <label for="reason_disable" class="control-label">Reason to disable player*</label>
+                                    <textarea required="required" class="form-control" name="reasonToDisable" placeholder="e.g. Disciplinary case" ></textarea>
+                                </div>
+                        
+                                <button type="submit" class="btn btn-warning" id="disable_confirm"><span class="fa fa-check"></span> PROCEED</button>
+                                <button type="button" class="btn " data-dismiss="modal"><span class="fa fa-remove"></span> Exit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.modal-content --> 
+                </div>
+                <!-- /.modal-dialog --> 
+            </div>
